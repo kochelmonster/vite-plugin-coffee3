@@ -1,0 +1,20 @@
+{
+    "name": "vite-plugin-coffee3",
+    "version": "1.0.0",
+    "description": "Coffeescript plugin for Vite with version 3 source maps",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/kochelmonster/vite-plugin-coffee3.git"
+    },
+    "keywords": [
+      "coffeescript"
+    ],
+    "author": "kochelmonster",
+    "license": "MIT",
+    "homepage": "https://github.com/kochelmonster/vite-plugin-coffee3.git#readme",
+    "dependencies": {
+      "coffeescript": "^2.7.0"
+    },
+    "type": "module"
+  }
