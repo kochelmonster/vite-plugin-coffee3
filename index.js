@@ -5,13 +5,20 @@ export function coffee(options) {
         name: 'coffee',
         transform: function(src, id) {
             if (/\.coffee$/.test(id)) {
-                const {js, v3SourceMap} = compile(src, {
+                const result = compile(src, {
                     filename: id,
                     ...options
                 });
-                return {
-                    code: js,
-                    map: v3SourceMap
+                if (result.js) {
+                    return {
+                        code: result.js,
+                        map: result.v3SourceMap
+                    }
+                }
+                else {
+                    return {
+                        code: result
+                    }
                 }
             }
         }
