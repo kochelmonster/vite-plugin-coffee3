@@ -1,6 +1,6 @@
 {
     "name": "vite-plugin-coffee3",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Coffeescript plugin for Vite with version 3 source maps",
     "main": "index.js",
     "repository": {
